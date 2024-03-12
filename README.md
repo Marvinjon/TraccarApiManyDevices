@@ -13,7 +13,7 @@ Setup Requirements
 Installation
 
     Ensure Python 3.x is installed on your system and download the script traccar_device_importer.py to your desired location.
-    
+
 Install the requests library using pip:
 
     pip install requests
@@ -53,22 +53,22 @@ Ensure there are no leading or trailing spaces around column headers or values u
 
 Usage
 
-    Open a terminal or command prompt.
-    Navigate to the directory where the script is located.
-    Run the script by executing:
+Open a terminal or command prompt.
+Navigate to the directory where the script is located.
+Run the script by executing:
 
     python traccar_device_importer.py
     
-    or 
+or 
     
     python3 traccar_device_importer.py
 
-    When prompted, enter your Traccar server URL, email address, password and file location with the .csv in the end of the file
+When prompted, enter your Traccar server URL, email address, password and file location with the .csv in the end of the file
 
 Troubleshooting
 
-    Invalid groupId: Ensure that the groupId corresponds to an existing group in your Traccar server. Non-existent groupIds will be ignored or cause errors.
-    Data type issues: Verify that numeric fields (like groupId and positionId) contain valid numbers or are left empty if optional.
-    Attribute JSON parsing: Ensure that the attributes column, if used, contains valid JSON strings. Invalid JSON will cause the script to skip setting custom attributes for that device.
+Invalid groupId: Ensure that the groupId corresponds to an existing group in your Traccar server. Non-existent groupIds will be ignored or cause errors.
+Data type issues: Verify that numeric fields (like groupId and positionId) contain valid numbers or are left empty if optional.
+Attribute JSON parsing: Ensure that the attributes column, if used, contains valid JSON strings. Invalid JSON will cause the script to skip setting custom attributes for that device.
 
 For further assistance, consult the Traccar API documentation.
