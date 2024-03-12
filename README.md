@@ -12,15 +12,17 @@ Setup Requirements
 
 Installation
 
-    Ensure Python 3.x is installed on your system.
-    Install the requests library using pip:
+    Ensure Python 3.x is installed on your system and download the script traccar_device_importer.py to your desired location.
+    
+Install the requests library using pip:
 
-pip install requests
+    pip install requests
+    
 or
-pip3 install requests
+    
+    pip3 install requests
 
 
-    Download the script traccar_device_importer.py to your desired location.
 
 CSV File Structure
 
@@ -41,12 +43,12 @@ The CSV file should contain the following headers:
 
 Example CSV content:
 
-name,uniqueId,disabled,groupId,phone,model,contact,category,attributes
-id,name,uniqueId,status,disabled,lastUpdate,positionId,groupId,phone,model,contact,category,attributes
-0,Vehicle 1,123456789,online,false,2024-03-12T10:15:22Z,0,8,1234567,discovery,johhny,car,
-0,Vehicle 2,12345678,offline,true,2024-03-12T10:15:22Z,0,9,12234567,lambo,1234567,car,
-0,Vehicle 3,1234567,online,false,2024-03-12T10:15:22Z,0,8,1134567,fiat,14,car,
-0,Vehicle 4,123456,offline,false,2024-03-12T10:15:22Z,0,8,2234567,subaru,Me,car,
+    name,uniqueId,disabled,groupId,phone,model,contact,category,attributes
+    id,name,uniqueId,status,disabled,lastUpdate,positionId,groupId,phone,model,contact,category,attributes
+    0,Vehicle 1,123456789,online,false,2024-03-12T10:15:22Z,0,8,1234567,discovery,johhny,car,
+    0,Vehicle 2,12345678,offline,true,2024-03-12T10:15:22Z,0,9,12234567,lambo,1234567,car,
+    0,Vehicle 3,1234567,online,false,2024-03-12T10:15:22Z,0,8,1134567,fiat,14,car,
+    0,Vehicle 4,123456,offline,false,2024-03-12T10:15:22Z,0,8,2234567,subaru,Me,car,
 
 Ensure there are no leading or trailing spaces around column headers or values unless they are intentional.
 
@@ -56,9 +58,11 @@ Usage
     Navigate to the directory where the script is located.
     Run the script by executing:
 
-python traccar_device_importer.py
+    python traccar_device_importer.py
+    
 or 
-python3 traccar_device_importer.py
+    
+    python3 traccar_device_importer.py
 
     When prompted, enter your Traccar server URL, email address, password and file location with the .csv in the end of the file
 
