@@ -4,8 +4,8 @@ This Python script automates the process of adding multiple devices to a Traccar
 Overview
 
 The script allows bulk importing of devices into Traccar, saving time and reducing the potential for manual entry errors. It supports setting various device properties, including unique identifiers, status, group associations, and custom attributes.
-Setup
-Requirements
+
+Setup Requirements
 
     Python 3.x
 
