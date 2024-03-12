@@ -13,7 +13,7 @@ Setup Requirements
 Installation
 
     Ensure Python 3.x is installed on your system and download the script traccar_device_importer.py to your desired location.
-    
+
 Install the requests library using pip:
 
     pip install requests
@@ -43,20 +43,19 @@ The CSV file should contain the following headers:
 
 Example CSV content:
 
-    name,uniqueId,disabled,groupId,phone,model,contact,category,attributes
     id,name,uniqueId,status,disabled,lastUpdate,positionId,groupId,phone,model,contact,category,attributes
-    0,Vehicle 1,123456789,online,false,2024-03-12T10:15:22Z,0,8,1234567,discovery,johhny,car,
-    0,Vehicle 2,12345678,offline,true,2024-03-12T10:15:22Z,0,9,12234567,lambo,1234567,car,
-    0,Vehicle 3,1234567,online,false,2024-03-12T10:15:22Z,0,8,1134567,fiat,14,car,
-    0,Vehicle 4,123456,offline,false,2024-03-12T10:15:22Z,0,8,2234567,subaru,Me,car,
+    0,Vehicle 1,123456789,offline,false,2024-03-12T10:15:22Z,0,8,1234567,Discovery,Johhny,car,
+    0,Vehicle 2,12345678,online,false,2024-03-12T10:15:22Z,0,9,12234567,Lambo,1234567,car,
+    0,Vehicle 3,1234567,online,true,2024-03-12T10:15:22Z,0,8,1134567,fiat,me,car,
+    0,Vehicle 4,1234556,offline,false,2024-03-12T10:15:22Z,0,8,2234567,suble,15,car,
 
 Ensure there are no leading or trailing spaces around column headers or values unless they are intentional.
 
 Usage
 
-    Open a terminal or command prompt.
-    Navigate to the directory where the script is located.
-    Run the script by executing:
+Open a terminal or command prompt.
+Navigate to the directory where the script is located.
+Run the script by executing:
 
     python traccar_device_importer.py
     
@@ -64,12 +63,12 @@ or
     
     python3 traccar_device_importer.py
 
-    When prompted, enter your Traccar server URL, email address, password and file location with the .csv in the end of the file
+When prompted, enter your Traccar server URL, email address, password and file location with the .csv in the end of the file
 
 Troubleshooting
 
-    Invalid groupId: Ensure that the groupId corresponds to an existing group in your Traccar server. Non-existent groupIds will be ignored or cause errors.
-    Data type issues: Verify that numeric fields (like groupId and positionId) contain valid numbers or are left empty if optional.
-    Attribute JSON parsing: Ensure that the attributes column, if used, contains valid JSON strings. Invalid JSON will cause the script to skip setting custom attributes for that device.
+Invalid groupId: Ensure that the groupId corresponds to an existing group in your Traccar server. Non-existent groupIds will be ignored or cause errors.
+Data type issues: Verify that numeric fields (like groupId and positionId) contain valid numbers or are left empty if optional.
+Attribute JSON parsing: Ensure that the attributes column, if used, contains valid JSON strings. Invalid JSON will cause the script to skip setting custom attributes for that device.
 
 For further assistance, consult the Traccar API documentation.
